@@ -13,7 +13,7 @@ cd setup_microbot
 ./install_ros.sh
 ```
 
-* Close and re-open the terminal
+- Close and re-open the terminal
 
 ```shell
 cd ~/setup_microbot
@@ -38,7 +38,7 @@ Enter SSID: # Enter SSID for virtual wifi access point.
 Enter passphrase: # Enter passphrase for the SSID
 ```
 
-* If you want to unregister the create_ap serivice, run the following command. 
+- If you want to unregister the create_ap serivice, run the following command.
 
 ```shell
 cd ~/setup_microbot
@@ -75,10 +75,11 @@ cd ~/setup_microbot
 
 ## Test and build SSD-Mobilenet
 
-* See https://github.com/dusty-nv/jetson-inference/blob/master/docs/detectnet-console-2.md#detecting-objects-from-the-command-line
+- See https://github.com/dusty-nv/jetson-inference/blob/master/docs/detectnet-console-2.md#detecting-objects-from-the-command-line
 
 ```shell
 cd
 cd jetson-inference/data
 detectnet-console.py --network=ssd-mobilenet-v2 images/peds_0.jpg output.jpg
+eog output.jpg
 ```
