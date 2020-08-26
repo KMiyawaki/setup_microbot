@@ -5,6 +5,8 @@
 - See [Getting Started With Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 - Set user name to `jetson` for JetCard.
 
+- If you want to install ROS only, see [Setup ROS for Jetson NANO](./ros_minimal.md)
+
 ## Install commands
 
 ```shell
