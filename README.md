@@ -1,15 +1,22 @@
-# Setup Microbot Softwares
+# Setup Microbot Software
+
+## Setup Jetson NANO
+
+- See [Getting Started With Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
+- Set user name to `jetson` for JetCard.
+
+## Install commands
 
 ```shell
 cd
 git clone https://github.com/KMiyawaki/setup_microbot.git
 cd setup_microbot
 ./stop_update.sh
-./install_jetcard.sh
+./install_jetcard.sh # You have to enter pass word, during installation process. If you have any erros, try again.
 ./install_pip2.sh # Recover pip for python2 to install pyTorch for python2.7
 ./install_camera_overrides.sh
 ./install_basic_package.sh
-./install_jetson_interface.sh # Select pyTorch for python2.7
+./install_jetson_interface.sh # Model Downloader->Download default models. Do not install pyTorch.
 ./install_ros.sh
 ```
 
@@ -83,3 +90,14 @@ cd jetson-inference/data
 detectnet-console.py --network=ssd-mobilenet-v2 images/peds_0.jpg output.jpg
 eog output.jpg
 ```
+
+## Test ROS Stage simulator
+
+- Close all terminals and open new terminal.
+
+```shell
+roscd my_microbot_apps/launch/simulation
+roslaunch navigation.launch use_teleop:=true
+```
+
+- You will see RViz and Stage simulator.
