@@ -9,7 +9,7 @@ cd setup_microbot
 ./stop_update.sh
 ./install_pip2.sh
 ./install_pip3.sh # ERROR will be occur, but no problem.
-./install_basic_package.sh
+./install_basic_packages.sh
 ./install_ros.sh
 ```
 

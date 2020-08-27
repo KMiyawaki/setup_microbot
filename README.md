@@ -17,7 +17,7 @@ cd setup_microbot
 ./install_jetcard.sh # You have to enter pass word, during installation process. If you have any erros, try again.
 ./install_pip2.sh # Recover pip for python2 to install pyTorch for python2.7
 ./install_camera_overrides.sh
-./install_basic_package.sh
+./install_basic_packages.sh
 ./install_jetson_interface.sh # Model Downloader->Download default models. Do not install pyTorch.
 ./install_ros.sh
 ```
