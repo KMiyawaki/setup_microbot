@@ -5,6 +5,7 @@ sudo apt update
 sudo apt install vino -y
 sudo ln -s ../vino-server.service /usr/lib/systemd/user/graphical-session.target.wants
 gsettings set org.gnome.Vino prompt-enabled false
+export DISPLAY=:0
 gsettings set org.gnome.Vino require-encryption false
 gsettings set org.gnome.Vino authentication-methods "['vnc']"
 gsettings set org.gnome.Vino vnc-password $(echo -n "${PASS}"|base64)
